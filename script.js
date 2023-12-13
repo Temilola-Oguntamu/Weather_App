@@ -1,3 +1,7 @@
+const button = document.getElementById('getWeatherBtn');
+
+button.addEventListener("click" , getWeather);
+
 function getWeather() {
     const cityInput = document.getElementById('cityInput');
     const cityName = cityInput.value;
@@ -7,7 +11,7 @@ function getWeather() {
         return;
     }
 
-    const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
+    const apiKey = 'cd1083e4bf6533d3862f369998e056df'; // Replace with your OpenWeatherMap API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
@@ -18,12 +22,15 @@ function getWeather() {
             return response.json();
         })
         .then(data => {
+            const city = data.name;
             const temperature = data.main.temp;
             const weatherCondition = data.weather[0].description;
-            const weatherInfo = `Current Temperature: ${temperature}°C, Weather: ${weatherCondition}`;
+            const weatherInfo = `City: ${city}, 
+            Current Temperature: ${temperature}°C, 
+            Weather: ${weatherCondition}`;
             document.getElementById('weatherInfo').innerText = weatherInfo;
         })
         .catch(error => {
             document.getElementById('weatherInfo').innerText = `Error: ${error.message}`;
         });
-}
+    }
