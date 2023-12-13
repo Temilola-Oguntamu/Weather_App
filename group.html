@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Weather App</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="group.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=PT+Serif&family=Poppins&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 </head>
 <body>
   <div class="container">
-    <h1>Simple Weather App</h1>
+    <h1>Weather App</h1>
     <div class="input-container">
       <input type="text" id="cityInput" placeholder="Enter city name">
       <button id="getWeatherBtn">Get Weather</button>
     </div>
+    <div>
+      <label for="countryInput">Country:</label>
+      <select id="countryInput">
+        <option value="ng">Nigeria</option>
+        <option value="us">United States</option>
+        <option value="gb">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="uae">UAE</option>
+        <!-- Add more countries here -->
+      </select>
+    </div>
+    <br>
+    <div>
+      <label for="dateInput">Date:</label>
+      <input type="date" id="dateInput">
+    </div>
+    <br>
+    <div>
+      <label for="timeInput">Time:</label>
+      <input type="time" id="timeInput">
+    </div>
+    <br>
+    <button id="getWeatherBtn" class="finalBtn">Get Weather</button>
+
+
+    
     <div id="weatherDisplay"></div>
   </div>
   <script></script>

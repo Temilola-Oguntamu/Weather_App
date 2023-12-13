@@ -1,0 +1,61 @@
+body {
+  background-image: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+}
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] , select , input[type="date"],input[type="time"]{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  
+  }
+  
+  button {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+
+  }
+  
+  #weatherDisplay {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .finalBtn{
+    margin: auto ;
+    width: 40%;
+    box-shadow: #4caf50;
