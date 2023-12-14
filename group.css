@@ -5,19 +5,34 @@ body {
   margin: 0;
   padding: 0;
 }
+.cloudImage{
+  position: absolute;
+  left: 20%; 
+}
   .container {
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(70%);
   }
   
   h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
+  }
+
+  .weather-info {
+    display: flex;
+    text-align: center;
+    margin: 20px 50px;
+    justify-content: center;
+    align-items: center;
   }
   
   .input-container {
@@ -35,6 +50,12 @@ body {
   
   }
   
+.outputContainer{
+  display: flex;
+  flex-direction: column;
+
+}
+
   button {
     display: block;
     padding: 10px 20px;
@@ -43,11 +64,16 @@ body {
     background-color: #4caf50;
     color: #fff;
     cursor: pointer;
+    margin-left: 10px;
   }
 
   button:hover {
     background-color: #45a049;
 
+  }
+  #temperature{
+    font-weight: 700;
+    display: block;
   }
   
   #weatherDisplay {

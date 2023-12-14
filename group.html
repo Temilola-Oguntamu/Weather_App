@@ -12,40 +12,30 @@
 <body>
 </head>
 <body>
+  <div class="cloudImage">
+    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="Cloud" />
+  </div>
   <div class="container">
     <h1>Weather App</h1>
     <div class="input-container">
       <input type="text" id="cityInput" placeholder="Enter city name">
       <button id="getWeatherBtn">Get Weather</button>
-    </div>
-    <div>
-      <label for="countryInput">Country:</label>
-      <select id="countryInput">
-        <option value="ng">Nigeria</option>
-        <option value="us">United States</option>
-        <option value="gb">United Kingdom</option>
-        <option value="ca">Canada</option>
-        <option value="uae">UAE</option>
-        <!-- Add more countries here -->
-      </select>
-    </div>
-    <br>
-    <div>
-      <label for="dateInput">Date:</label>
-      <input type="date" id="dateInput">
-    </div>
-    <br>
-    <div>
-      <label for="timeInput">Time:</label>
-      <input type="time" id="timeInput">
-    </div>
-    <br>
-    <button id="getWeatherBtn" class="finalBtn">Get Weather</button>
-
-
-    
-    <div id="weatherDisplay"></div>
   </div>
+
+
+  <div>        
+    <div id="weatherInfo" class="weather-info"></div>    
+  </div>
+
+  <div class="outputContainer">
+    <div id="temperature"></div>
+    <div id = "weatherCondition"></div>
+  </div>
+
+    <!-- <button id="getWeatherBtn" class="finalBtn">Get Weather</button> -->
+
+  </div>
+  <script src="script.js"></script>
   <script src="./getWeather.js"></script>
 </body>
 </body>
