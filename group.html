@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="group.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=PT+Serif&family=Poppins&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="group.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=PT+Serif&family=Poppins&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="cloudImage">
@@ -20,19 +18,16 @@
     <div class="input-container">
       <input type="text" id="cityInput" placeholder="Enter city name">
       <button id="getWeatherBtn">Get Weather</button>
-  </div>
+    </div>
 
+    <div>        
+      <div id="weatherInfo" class="weather-info"></div>    
+    </div>
 
-  <div>        
-    <div id="weatherInfo" class="weather-info"></div>    
-  </div>
-
-  <div class="outputContainer">
-    <div id="temperature"></div>
-    <div id = "weatherCondition"></div>
-  </div>
-
-    <!-- <button id="getWeatherBtn" class="finalBtn">Get Weather</button> -->
+    <div class="outputContainer">
+      <div id="temperature"></div>
+      <div id = "weatherCondition"></div>
+    </div>
 
   </div>
   <script src="script.js"></script>
