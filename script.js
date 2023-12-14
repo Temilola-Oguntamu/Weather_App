@@ -25,8 +25,8 @@ function getWeather() {
             const city = data.name;
             const temperature = data.main.temp;
             const weatherCondition = data.weather[0].description;
-            const weatherInfo = `City: ${city}, 
-            Current Temperature: ${temperature}°C, 
+            const weatherInfo = `City: ${city} 
+            Current Temperature: ${temperature}°C 
             Weather: ${weatherCondition}`;
             document.getElementById('weatherInfo').innerText = weatherInfo;
         })
